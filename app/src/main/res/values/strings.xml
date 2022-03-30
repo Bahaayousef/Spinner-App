@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SpinnerApp</string>
+
+<string-array name="birds">
+    <item>BMW</item>
+    <item>Mercedes-Benz</item>
+    <item>Toyota</item>
+    <item>DODGE</item>
+    <item>HYUNDAI</item>
+    <item>HONDA</item>
+    <item></item>
+</string-array>
+</resources>
