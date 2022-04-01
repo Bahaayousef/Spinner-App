@@ -2,11 +2,10 @@ package com.example.spinnerapp
 
 import android.os.Bundle
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import android.widget.Button
+import android.widget.Toast
 
 
 class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
@@ -15,6 +14,17 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
+        val ButtonClick = findViewById<Button>(R.id.ButtonClick)
+
+        ButtonClick.setOnClickListener {
+            Toast.makeText(this@MainActivity, " 1+1=2  :)", Toast.LENGTH_SHORT).show()
+        }
+
+
+
         title = "Spinner APP"
         textView = findViewById(R.id.textView)
         spinner = findViewById(R.id.spinner)
